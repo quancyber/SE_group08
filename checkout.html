@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="vi" class="bg-fill" style="scroll-behavior:auto;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>HITA - Thanh toán</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Cormorant%20Upright%3Aregular%2Cregular%7COpen%20Sans%3Aregular%2Cregular%2Cregular%7COpen%20Sans%20Condensed%3Aregular%2C300italic%7CLora&#038;display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Cormorant%20Upright%3Aregular%2Cregular%7COpen%20Sans%3Aregular%2Cregular%2Cregular%7COpen%20Sans%20Condensed%3Aregular%2C300italic%7CLora&#038;display=swap"
+        media="print" onload="this.media='all'" />
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="wrapper">
+        <header id="header" class="header has-sticky sticky-jump">
+            <div class="header-wrapper">
+                <div id="top-bar" class="header-top nav-dark hide-for-medium">
+                    <div class="flex-row container">
+                        <div class="flex-col hide-for-medium flex-left">
+                            <ul class="nav nav-left medium-nav-center nav-small nav-divided">
+                                <li class="html custom html_topbar_left"></li>
+                            </ul>
+                        </div>
+
+                        <div class="flex-col hide-for-medium flex-center">
+                            <ul class="nav nav-center nav-small  nav-divided">
+                            </ul>
+                        </div>
+
+                        <div class="flex-col hide-for-medium flex-right">
+                            <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
+                                <li class="cart-item has-icon has-dropdown">
+
+                                    <a href="cart.html" title="Giỏ hàng" class="header-cart-link is-small">
+                                        <span class="cart-icon image-icon">
+                                            <strong>0</strong>
+                                        </span>
+                                    </a>
+
+                                </li>
+                                <li class="account-item has-icon">
+                                    <a href="/login.html"
+                                        class="nav-top-link nav-top-not-logged-in is-small current-lightbox-clicked">
+                                        <span>
+                                            Đăng nhập / Đăng ký </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="masthead" class="header-main nav-dark">
+                    <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+                        <!-- Logo -->
+                        <div id="logo" class="flex-col logo">
+                            <!-- Header logo -->
+                            <a href="home.html" title="HITA Coffee - HITA lợi ích cho người" rel="home">
+                                <img width="200" height="73" class="header_logo header-logo" alt="HITA Store">
+
+                                <img width="200" height="73"
+                                    src="https://hitasanti.com/wp-content/uploads/2019/09/hita-vegan-logo.png"
+                                    class="header-logo-dark" alt="HITA Store">
+
+                            </a>
+                        </div>
+
+
+                        <!-- Left Elements -->
+                        <div class="flex-col hide-for-medium flex-left flex-grow">
+                            <ul class="header-nav header-nav-main nav nav-left  nav-line-bottom nav-spacing-small">
+                                <li>
+                                    <a href="home.html" class="nav-top-link">
+                                        Trang chủ</a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="nav-top-link">Sản phẩm</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="about.html" class="nav-top-link">Về chúng tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Right Elements -->
+                        <div class="flex-col hide-for-medium flex-right">
+                            <ul class="header-nav header-nav-main nav nav-right  nav-line-bottom nav-spacing-small">
+                                <li class="header-search has-icon">
+                                    <div class="header-button"> <a class="icon button circle is-outline is-small">
+                                            <i class="fa-solid fa-magnifying-glass" style="font-size: 16px;"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Right Elements -->
+                    <div class="flex-col show-for-medium flex-right">
+                        <ul class="mobile-nav nav nav-right ">
+                            <li class="cart-item has-icon">
+
+                                <a href="cart.html" class=" nav-top-link is-small" title="Giỏ hàng">
+
+                                    <span class="cart-icon image-icon">
+                                        <strong>0</strong>
+                                    </span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="top-divider full-width"></div>
+                </div>
+            </div>
+            <div class="header-bg-container fill">
+                <div class="header-bg-image fill"></div>
+                <div class="header-bg-color fill"></div>
+            </div>
+        </header>
+    </div>
+
+    <!-- MAIN -->
+    <main id="main" class="">
+        <div id="content" class="content-area page-wrapper" role="main">
+            <div class="row row-main">
+                <div class="large-12 col">
+                    <div class="col-inner">
+                        <div id="gap-326389152" class="gap-element clearfix hidden pt-1"
+                            style="display:block; height:auto;">
+                        </div>
+                        <div class="woocommerce">
+                            <div class="woocommerce-notices-wrapper"></div>
+                            <form id="form-checkout" name="checkout" method="get"
+                                class="checkout woocommerce-checkout ">
+                                <div class="row pt-0">
+                                    <div class="large-7 col">
+                                        <div class="wc_coupon_message_wrap" style="padding: 10px 0 10px;">
+                                            <div class="no_wc_coupon_message"></div>
+                                        </div>
+                                        <div id="customer_details">
+                                            <div class="clear">
+                                                <div class="woocommerce-billing-fields">
+                                                    <h3>Thông tin thanh toán</h3>
+                                                    <div class="woocommerce-billing-fields__field-wrapper">
+                                                        <p class="form-row form-row-first thwcfd-field-wrapper thwcfd-field-email validate-required validate-email"
+                                                            id="billing_email_field"><label for="billing_email"
+                                                                class="">Email&nbsp;<abbr class="required"
+                                                                    title="bắt buộc">*</abbr></label><span
+                                                                class="woocommerce-input-wrapper">
+                                                                <input type="email" class="input-text "
+                                                                    name="billing_email" id="billing_email"
+                                                                    placeholder="Email" value=""
+                                                                    autocomplete="email username" required></span></p>
+                                                        <p class="form-row form-row-first thwcfd-field-wrapper thwcfd-field-text validate-required"
+                                                            id="billing_first_name_field"><label for="billing_last_name"
+                                                                class="">Họ&nbsp;<abbr class="required"
+                                                                    title="bắt buộc">*</abbr></label><span
+                                                                class="woocommerce-input-wrapper">
+                                                                <input type="text" class="input-text "
+                                                                    name="billing_last_name" id="billing_last_name"
+                                                                    placeholder="Họ" value="" autocomplete="given-name"
+                                                                    required></span>
+                                                        </p>
+                                                        <p class="form-row form-row-last thwcfd-field-wrapper thwcfd-field-text validate-required"
+                                                            id="billing_last_name_field"><label for="billing_first_name"
+                                                                class="">Tên&nbsp;<abbr class="required"
+                                                                    title="bắt buộc">*</abbr></label><span
+                                                                class="woocommerce-input-wrapper">
+                                                                <input type="text" class="input-text "
+                                                                    name="billing_first_name" id="billing_first_name"
+                                                                    placeholder="Tên" value=""
+                                                                    autocomplete="family-name" required></span></p>
+                                                        <p class="form-row address-field form-row-first thwcfd-field-wrapper thwcfd-field-text validate-required"
+                                                            id="billing_address_1_field"><label for="billing_address"
+                                                                class="">Địa chỉ nhận
+                                                                hàng&nbsp;<abbr class="required"
+                                                                    title="bắt buộc">*</abbr></label><span
+                                                                class="woocommerce-input-wrapper">
+                                                                <input type="text" class="input-text "
+                                                                    name="billing_address" id="billing_address"
+                                                                    placeholder="Số nhà, tên đường, tên phường, tên quận"
+                                                                    value="" autocomplete="address-line1"
+                                                                    required></span></p>
+                                                        <p class="form-row address-field validate-required validate-state form-row-first"
+                                                            id="shipping_state_field">
+                                                            <label for="shipping_state" class="">Tỉnh/ Thành
+                                                                phố&nbsp;<abbr class="required"
+                                                                    title="bắt buộc">*</abbr></label><span
+                                                                class="woocommerce-input-wrapper"><select
+                                                                    name="shipping_state" id="shipping_state"
+                                                                    class="state_select select2-hidden-accessible"
+                                                                    autocomplete="address-level1"
+                                                                    data-placeholder="Chọn một tùy chọn…"
+                                                                    data-input-classes="" data-label="Bang / Hạt"
+                                                                    tabindex="-1" aria-hidden="true">
+                                                                    <option value="">Chọn một tùy chọn…</option>
+                                                                    <option value="AN-GIANG">An Giang</option>
+                                                                    <option value="BA-RIA-VUNG-TAU">Bà Rịa - Vũng
+                                                                        Tàu</option>
+                                                                    <option value="BAC-LIEU">Bạc Liêu</option>
+                                                                    <option value="BAC-KAN">Bắc Kạn</option>
+                                                                    <option value="BAC-GIANG">Bắc Giang</option>
+                                                                    <option value="BAC-NINH">Bắc Ninh</option>
+                                                                    <option value="BEN-TRE">Bến Tre</option>
+                                                                    <option value="BINH-DUONG">Bình Dương</option>
+                                                                    <option value="BINH-DINH">Bình Định</option>
+                                                                    <option value="BINH-PHUOC">Bình Phước</option>
+                                                                    <option value="BINH-THUAN">Bình Thuận</option>
+                                                                    <option value="CA-MAU">Cà Mau</option>
+                                                                    <option value="CAO-BANG">Cao Bằng</option>
+                                                                    <option value="CAN-THO">Cần Thơ</option>
+                                                                    <option value="DA-NANG">Đà Nẵng</option>
+                                                                    <option value="DAK-LAK">Đắk Lắk</option>
+                                                                    <option value="DAK-NONG">Đắk Nông</option>
+                                                                    <option value="DONG-NAI">Đồng Nai</option>
+                                                                    <option value="DONG-THAP">Đồng Tháp</option>
+                                                                    <option value="DIEN-BIEN">Điện Biên</option>
+                                                                    <option value="GIA-LAI">Gia Lai</option>
+                                                                    <option value="HA-GIANG">Hà Giang</option>
+                                                                    <option value="HA-NAM">Hà Nam</option>
+                                                                    <option value="HA-NOI">Hà Nội</option>
+                                                                    <option value="HA-TINH">Hà Tĩnh</option>
+                                                                    <option value="HAI-DUONG">Hải Dương</option>
+                                                                    <option value="HAI-PHONG">Hải Phòng</option>
+                                                                    <option value="HOA-BINH">Hòa Bình</option>
+                                                                    <option value="HAU-GIANG">Hậu Giang</option>
+                                                                    <option value="HUNG-YEN">Hưng Yên</option>
+                                                                    <option value="HO-CHI-MINH" selected>Hồ Chí Minh
+                                                                    </option>
+                                                                    <option value="KHANH-HOA">Khánh Hòa</option>
+                                                                    <option value="KIEN-GIANG">Kiên Giang</option>
+                                                                    <option value="KON-TUM">Kon Tum</option>
+                                                                    <option value="LAI-CHAU">Lai Châu</option>
+                                                                    <option value="LAO-CAI">Lào Cai</option>
+                                                                    <option value="LANG-SON">Lạng Sơn</option>
+                                                                    <option value="LAM-DONG">Lâm Đồng</option>
+                                                                    <option value="LONG-AN">Long An</option>
+                                                                    <option value="NAM-DINH">Nam Định</option>
+                                                                    <option value="NGHE-AN">Nghệ An</option>
+                                                                    <option value="NINH-BINH">Ninh Bình</option>
+                                                                    <option value="NINH-THUAN">Ninh Thuận</option>
+                                                                    <option value="PHU-THO">Phú Thọ</option>
+                                                                    <option value="PHU-YEN">Phú Yên</option>
+                                                                    <option value="QUANG-BINH">Quảng Bình</option>
+                                                                    <option value="QUANG-NAM">Quảng Nam</option>
+                                                                    <option value="QUANG-NGAI">Quảng Ngãi</option>
+                                                                    <option value="QUANG-NINH">Quảng Ninh</option>
+                                                                    <option value="QUANG-TRI">Quảng Trị</option>
+                                                                    <option value="SOC-TRANG">Sóc Trăng</option>
+                                                                    <option value="SON-LA">Sơn La</option>
+                                                                    <option value="TAY-NINH">Tây Ninh</option>
+                                                                    <option value="THAI-BINH">Thái Bình</option>
+                                                                    <option value="THAI-NGUYEN">Thái Nguyên</option>
+                                                                    <option value="THANH-HOA">Thanh Hóa</option>
+                                                                    <option value="THUA-THIEN-HUE">Thừa Thiên - Huế
+                                                                    </option>
+                                                                    <option value="TIEN-GIANG">Tiền Giang</option>
+                                                                    <option value="TRA-VINH">Trà Vinh</option>
+                                                                    <option value="TUYEN-QUANG">Tuyên Quang</option>
+                                                                    <option value="VINH-LONG">Vĩnh Long</option>
+                                                                    <option value="VINH-PHUC">Vĩnh Phúc</option>
+                                                                    <option value="YEN-BAI">Yên Bái</option>
+                                                                </select>
+                                                        </p>
+
+                                                        <p class="form-row form-row-first thwcfd-field-wrapper thwcfd-field-tel validate-required validate-phone"
+                                                            id="billing_phone_field"><label for="billing_phone"
+                                                                class="">Số điện thoại&nbsp;<abbr class="required"
+                                                                    title="bắt buộc">*</abbr></label><span
+                                                                class="woocommerce-input-wrapper"><input type="tel"
+                                                                    class="input-text " name="billing_phone"
+                                                                    id="billing_phone" placeholder="Số điện thoại"
+                                                                    value="" autocomplete="tel" required></span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear">
+                                                <div class="woocommerce-additional-fields">
+                                                    <div class="woocommerce-additional-fields__field-wrapper">
+                                                        <p class="form-row notes thwcfd-field-wrapper thwcfd-field-textarea"
+                                                            id="order_comments_field"><label for="order_comments"
+                                                                class="">Ghi chú đơn
+                                                                hàng&nbsp;<span class="optional">(tuỳ
+                                                                    chọn)</span></label><span
+                                                                class="woocommerce-input-wrapper"><textarea
+                                                                    name="order_comments" class="input-text"
+                                                                    id="order_comments"
+                                                                    placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn."
+                                                                    rows="2" cols="5"></textarea></span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="large-5 col">
+                                        <div class="is-sticky-column">
+                                            <div class="is-sticky-column__inner"
+                                                style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                                                <div class="is-sticky-column__inner"
+                                                    style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                                                    <div class="col-inner has-border">
+                                                        <div class="checkout-sidebar sm-touch-scroll">
+                                                            <h3 id="order_review_heading">Đơn hàng của bạn</h3>
+                                                            <div id="order_review"
+                                                                class="woocommerce-checkout-review-order">
+                                                                <table
+                                                                    class="shop_table woocommerce-checkout-review-order-table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="product-name">Sản phẩm</th>
+                                                                            <th class="product-total">Tạm tính</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="checkout-cart-item">
+                                                                        <!-- <tr class="cart_item">
+                                                                        <td class="product-name">
+                                                                            Cà phê sữa đá&nbsp; <strong
+                                                                                class="product-quantity">×&nbsp;1</strong>
+                                                                        </td>
+                                                                        <td class="product-total">
+                                                                            <span
+                                                                                class="woocommerce-Price-amount amount"><bdi>39,000<span
+                                                                                        class="woocommerce-Price-currencySymbol">VND</span></bdi></span>
+                                                                        </td>
+                                                                    </tr> -->
+                                                                        <!-- <tr class="cart_item">
+                                                                        <td class="product-name">
+                                                                            Cold Brew Happy HITA&nbsp; <strong
+                                                                                class="product-quantity">×&nbsp;1</strong>
+                                                                        </td>
+                                                                        <td class="product-total">
+                                                                            <span
+                                                                                class="woocommerce-Price-amount amount"><bdi>89,000<span
+                                                                                        class="woocommerce-Price-currencySymbol">VND</span></bdi></span>
+                                                                        </td>
+                                                                    </tr> -->
+                                                                    </tbody>
+                                                                    <tfoot>
+
+                                                                        <tr class="cart-subtotal">
+                                                                            <th>Tạm tính</th>
+                                                                            <td><span id="sub-total"
+                                                                                    class="woocommerce-Price-amount amount"></span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr
+                                                                            class="woocommerce-shipping-totals shipping ">
+                                                                            <td class="shipping__inner" colspan="2">
+                                                                                <table class="shipping__table ">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th>Giao hàng</th>
+                                                                                            <td data-title="Giao hàng">
+                                                                                                <ul id="shipping_method"
+                                                                                                    class="shipping__list woocommerce-shipping-methods">
+                                                                                                    <li
+                                                                                                        class="shipping__list_item">
+                                                                                                        <input
+                                                                                                            type="hidden"
+                                                                                                            name="shipping_method[0]"
+                                                                                                            data-index="0"
+                                                                                                            id="shipping_method_0_flat_rate2"
+                                                                                                            value="flat_rate:2"
+                                                                                                            class="shipping_method"><label
+                                                                                                            class="shipping__list_label"
+                                                                                                            for="shipping_method_0_flat_rate2">Phí
+                                                                                                            ship: <span
+                                                                                                                class="woocommerce-Price-amount amount"><bdi>25,000<span
+                                                                                                                        class="woocommerce-Price-currencySymbol">VND</span></bdi></span></label>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="order-total">
+                                                                            <th>Tổng</th>
+                                                                            <td><strong><span id="total"
+                                                                                        class="woocommerce-Price-amount amount"></span></strong>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                </table>
+
+                                                                <div id="payment" class="woocommerce-checkout-payment">
+                                                                    <ul
+                                                                        class="wc_payment_methods payment_methods methods">
+                                                                        <li
+                                                                            class="wc_payment_method payment_method_cod">
+                                                                            <input id="payment_method_cod" type="radio"
+                                                                                class="input-radio"
+                                                                                name="payment_method" value="cod"
+                                                                                checked="checked"
+                                                                                data-order_button_text=""
+                                                                                style="display: none;">
+
+                                                                            <label for="payment_method_cod">
+                                                                                Trả tiền mặt khi nhận hàng </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="form-row place-order">
+                                                                        <noscript>
+                                                                            Trình duyệt của bạn không hỗ trợ JavaScript,
+                                                                            hoặc nó bị vô hiệu hóa, hãy đảm bảo bạn nhấp
+                                                                            vào
+                                                                            <em>Cập nhật giỏ hàng</em> trước khi bạn
+                                                                            thanh
+                                                                            toán. Bạn có thể phải trả nhiều hơn số tiền
+                                                                            đã
+                                                                            nói ở trên, nếu bạn không làm như vậy.
+                                                                            <br /><button type="submit"
+                                                                                class="button alt"
+                                                                                name="woocommerce_checkout_update_totals"
+                                                                                value="Cập nhật tổng">Cập nhật
+                                                                                tổng</button>
+                                                                        </noscript>
+
+                                                                        <div
+                                                                            class="woocommerce-terms-and-conditions-wrapper">
+
+                                                                        </div>
+                                                                        <button type="submit" class="button alt"
+                                                                            name="woocommerce_checkout_place_order"
+                                                                            id="place_order" value="Đặt hàng"
+                                                                            data-value="Đặt hàng"
+                                                                            onclick="completeCheckout()">Đặt
+                                                                            hàng</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="woocommerce-privacy-policy-text"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            </form>
+                            <div class="woocommerce-info rspgpoints" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- FOOTER  -->
+    <footer id="footer" class="footer-wrapper">
+        <div class="footer-widgets footer footer-2 dark">
+            <div class="row dark large-columns-1 mb-0">
+                <div id="block_widget-6" class="col pb-0 widget block_widget">
+                    <div class="row footer-new" id="row-1652326020">
+
+                        <div id="col-484553449" class="col medium-4 small-12 large-4">
+                            <div class="col-inner">
+                                <div class="row" id="row-1126033569">
+
+                                    <div id="col-496395474" class="col small-12 large-12">
+                                        <div class="col-inner text-left">
+
+                                            <h4><span style="font-size: 100%;">SHOWROOM VÀ VĂN PHÒNG</span></h4>
+                                            <p>C5-C6 khu nhà ở thương mại, 319 Lý Thường Kiệt, P.15, Q.11, Tp. Hồ Chí
+                                                Minh <a rel="noopener noreferrer nofollow"
+                                                    href="https://g.page/hitasanticom?share" target="_blank"> <span
+                                                        style="color: #aaaaaa;">(Xem bản đồ)</span></a><br>
+                                                Email: <a style="color: #f1f1f1;"
+                                                    href="mailto:sanphamsach@hitasanti.com?Subject=Xin Chào Cty HITA"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"><strong>sanphamsach@hitasanti.com</strong></a><br>
+                                                Hotline: <a href="tel:08.66.484.666"><span
+                                                        style="font-weight: bold;">08.66.484.666</span></a></p>
+                                            <div class="row" id="row-1882829843">
+
+                                                <div id="col-1321676209" class="col small-12 large-12">
+                                                    <div class="col-inner">
+
+                                                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                                        <div class="social-icons follow-icons"><a
+                                                                href="https://www.facebook.com/hitasanticom/"
+                                                                target="_blank" data-label="Facebook"
+                                                                rel="noopener noreferrer nofollow"
+                                                                class="icon primary button circle facebook tooltip tooltipstered"><i
+                                                                    class="fa-brands fa-facebook"></i></a><a
+                                                                href="https://www.instagram.com/hitasanticom/"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="Instagram"
+                                                                class="icon primary button circle instagram tooltip tooltipstered"><i
+                                                                    class="fa-brands fa-instagram"></i></a><a
+                                                                href="https://twitter.com/hitasantiCom" target="_blank"
+                                                                data-label="Twitter" rel="noopener noreferrer nofollow"
+                                                                class="icon primary button circle twitter tooltip tooltipstered"><i
+                                                                    class="fa-brands fa-twitter"></i></a><a
+                                                                href="mailto:sanphamsach@hitasanti.com"
+                                                                data-label="E-mail" rel="nofollow"
+                                                                class="icon primary button circle email tooltip tooltipstered"><i
+                                                                    class="fa-regular fa-envelope"></i></a><a
+                                                                href="tel:0866484666" target="_blank" data-label="Phone"
+                                                                rel="noopener noreferrer nofollow"
+                                                                class="icon primary button circle phone tooltip tooltipstered"><i
+                                                                    class="fa-solid fa-phone"></i></a><a
+                                                                href="https://www.pinterest.com/hitasanticom/"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="Pinterest"
+                                                                class="icon primary button circle pinterest tooltip tooltipstered"><i
+                                                                    class="fa-brands fa-pinterest"></i></a><a
+                                                                href="https://www.linkedin.com/company/hitasanticom"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="LinkedIn"
+                                                                class="icon primary button circle linkedin tooltip tooltipstered"><i
+                                                                    class="fa-brands fa-linkedin"></i></a><a
+                                                                href="https://www.youtube.com/channel/UC_pMSjhNoxJ3hJvAp84NEqg"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="YouTube"
+                                                                class="icon primary button circle youtube tooltip tooltipstered"><i
+                                                                    class="fa-brands fa-youtube"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <style>
+                                #col-484553449>.col-inner {
+                                    margin: 0 0px 0px 0px;
+                                }
+                            </style>
+                        </div>
+
+                        <div id="col-470406109" class="col medium-8 small-12 large-8">
+                            <div class="col-inner">
+
+                                <div class="row" id="row-1394230124">
+
+                                    <div id="col-1008618337" class="col medium-6 small-6 large-6">
+                                        <div class="col-inner">
+
+                                            <h4>VỀ HITA</h4>
+                                            <ul class="notStyle ">
+                                                <li><a href="https://hitasanti.com/gioi-thieu-hita/" target="_blank"
+                                                        rel="noopener sponsored">Giới thiệu</a></li>
+                                                <li><a href="https://hitasanti.com/lien-he/" target="_blank"
+                                                        rel="noopener sponsored">Liên hệ</a></li>
+                                                <li><a href="https://hitasanti.com/he-thong-hita-brands/"
+                                                        target="_blank" rel="noopener sponsored">Hệ thống nhãn hiệu</a>
+                                                </li>
+                                                <li><a href="https://store.hitasanti.com/chinh-sach-bao-mat-thong-tin">Qui
+                                                        định bảo mật</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="col-1994350822" class="col medium-6 small-12 large-6">
+                                        <div class="col-inner text-left">
+                                            <h4>THÔNG TIN</h4>
+                                            <ul class="notStyle ">
+                                                <li><a href="https://hitasanti.com/c/thong-tin-tuyen-dung/"
+                                                        target="_blank" rel="noopener sponsored">Thông tin tuyển
+                                                        dụng</a></li>
+                                                <li><a href="https://hitasanti.com/danh-sach-video/" target="_blank"
+                                                        rel="noopener">Video</a></li>
+                                                <li><a href="http://www.hitasanti.com/hoi-dap">Hỏi đáp</a></li>
+                                                <li><a href="http://www.hitasanti.com/hop-tac-kinh-doanh">Hợp tác kinh
+                                                        doanh</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="col-580334198" class="col small-12 large-12">
+                                        <div class="col-inner">
+
+                                            <div class="container section-title-container" style="margin-bottom:0px;">
+                                                <h4 class="section-title section-title-normal"><b></b><span
+                                                        class="section-title-main">ĐỂ LẠI MAIL NHẬN NHIỀU ƯU ĐÃI
+                                                        HƠN</span><b></b></h4>
+                                            </div>
+
+                                            <div role="form" class="wpcf7" id="wpcf7-f10-o1" lang="en-US" dir="ltr">
+                                                <div class="screen-reader-response">
+                                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                    <ul></ul>
+                                                </div>
+                                                <form action="/#wpcf7-f10-o1" method="post" class="wpcf7-form init"
+                                                    novalidate="novalidate" data-status="init">
+                                                    <div style="display: none;">
+                                                        <input type="hidden" name="_wpcf7" value="10">
+                                                        <input type="hidden" name="_wpcf7_version" value="5.4.2">
+                                                        <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                                        <input type="hidden" name="_wpcf7_unit_tag"
+                                                            value="wpcf7-f10-o1">
+                                                        <input type="hidden" name="_wpcf7_container_post" value="0">
+                                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                                                    </div>
+                                                    <div class="flex-row form-flat medium-flex-wrap ftNewsletter">
+                                                        <div class="flex-col flex-grow">
+                                                            <span class="wpcf7-form-control-wrap your-email"><input
+                                                                    type="email" name="your-email" value="" size="40"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                                    aria-required="true" aria-invalid="false"
+                                                                    placeholder="Đăng ký email"></span>
+                                                        </div>
+                                                        <div class="flex-col ml-half">
+                                                            <input type="submit" value="Đăng ký"
+                                                                class="wpcf7-form-control wpcf7-submit button"><span
+                                                                class="ajax-loader"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                </form>
+                                            </div>
+
+                                            <p><i><span style="font-size: 85%;">* Hãy để lại email để nhận được những
+                                                        khuyến mãi mới nhất</span> </i></p>
+
+                                        </div>
+
+                                        <style>
+                                            #col-580334198>.col-inner {
+                                                margin: 13px 0px 0px 0px;
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#top"
+            class="back-to-top bodhi-tree icon invert plain fixed bottom z-1 is-outline circle __mPS2id active"
+            id="top-link"><i class="icon-angle-up"></i></a>
+
+        <div class="absolute-footer dark medium-text-center small-text-center">
+            <div class="container clearfix">
+
+                <div class="footer-primary pull-left">
+                    <div class="copyright-footer">
+                        <div class="mainBottomFooter">
+                            <div class="bot-ft clearfix insScroll">
+
+                                <div class="logo-ft-1 pull-left">
+                                    <a rel="noopener noreferrer nofollow"
+                                        href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=45785"><img
+                                            class="insImageload lazyloaded" alt="HITA"
+                                            src="//theme.hstatic.net/1000290372/1000458418/14/dtb.png?v=1066"
+                                            width="200"></a>
+                                </div>
+
+                                <div class="copy pull-left">
+                                    <p style="color:#000; margin-bottom:0;">
+                                        <span style="font-weight: bold; ">Công ty TNHH Thương Mại &amp; Dịch Vụ
+                                            HITA</span> <br>
+                                        Chịu trách nhiệm quản lý nội dung: Phòng Thương Mại Điện Tử Công ty TNHH Thương
+                                        Mại &amp; Dịch Vụ HITA
+                                        <br>
+                                        Mã số thuế: 0315026989 do Sở Kế hoạch đầu tư TP HCM cấp ngày 07/05/2018
+                                        <br>
+                                        Copyrights ©2020 www.hitasanti.com. All Rights Reserved
+
+                                    </p>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+<script src="auth.js"></script>
+<script src="headerCart.js"></script>
+<script src="checkout.js"></script>
+
+</html>

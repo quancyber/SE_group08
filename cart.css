@@ -1,0 +1,399 @@
+.page-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 850px) {
+    .large-12 {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+.xt-framework-notice::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.xt-framework-notice {
+    line-height: initial !important;
+    display: flex;
+    align-items: center;
+}
+
+.xt-framework-notice .xt-framework-notice-col-left {
+    width: 70%;
+    float: left;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.xt-framework-notice .xt-framework-notice-col-right {
+    float: right;
+    margin: 0;
+}
+
+.xt_woofc .xt_woopr-hide-on-cart,
+body.woocommerce-cart .xt_woopr-hide-on-cart {
+    display: none !important;
+}
+
+.xt-framework-notice .button {
+    padding: 8px 12px !important;
+    float: right;
+}
+
+@media screen and (min-width: 850px) {
+
+    .row .row-large:not(.row-collapse),
+    .container .row-large:not(.row-collapse) {
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-bottom: 0;
+    }
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1em;
+    border-color: #ececec;
+    border-spacing: 0;
+}
+
+.shop_table thead th,
+.shop_table .order-total td,
+.shop_table .order-total th {
+    border-width: 3px;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th,
+td {
+    padding: .5em;
+
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+
+
+    font-size: .9em;
+}
+
+.cart_totals tbody th {
+    font-size: .9em;
+    text-transform: inherit;
+    letter-spacing: 0;
+    font-weight: normal;
+}
+
+.shipping__table {
+    margin: 0;
+}
+
+.shipping__list {
+    margin-bottom: 0;
+}
+
+.shop_table ul li,
+.checkout ul li {
+    list-style: none;
+    margin: 0;
+}
+
+tr.shipping input {
+    margin-bottom: 0;
+    margin-top: -2px;
+}
+
+td label,
+td .label,
+td input,
+td select,
+td form,
+td dl,
+td p {
+    margin: .5em 0;
+}
+
+.shipping__list_label {
+    font-weight: normal;
+    margin: 0;
+    padding: .5em 0;
+    opacity: .8;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+tr.shipping span.amount {
+    margin-left: .2em;
+}
+
+
+.woocommerce-shipping-destination,
+.shipping-calculator-button {
+    font-size: .9em;
+}
+
+.cart_totals .wc-proceed-to-checkout {
+    margin: 1.5em 0;
+}
+
+.cart_totals .button {
+    min-width: 100%;
+    margin-right: 0;
+    display: block;
+}
+
+.current .breadcrumb-step,
+[data-icon-label]::after,
+.button#place_order,
+.button.checkout,
+.checkout-button,
+.single_add_to_cart_button.button {
+    background-color: #c29832 !important;
+}
+
+
+
+
+
+
+td.product-total,
+.shop_table tfoot tr td,
+.cart_totals tbody tr td,
+.shop_table thead tr th:last-of-type,
+.shop_table tr td:last-of-type {
+    text-align: right;
+}
+
+.shop_table th:last-child {
+    border-right: 0;
+}
+
+.shop_table .cart_item td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+td.product-remove {
+    width: 20px;
+    padding: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+a.remove,
+a.icon-remove {
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-size: 15px !important;
+    line-height: 19px !important;
+    border-radius: 100%;
+    color: #ccc;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid currentColor;
+}
+
+td.product-thumbnail {
+    min-width: 60px;
+    max-width: 90px;
+    width: 90px;
+}
+
+td {
+    color: #666;
+}
+
+td.product-name {
+    word-break: break-word;
+
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 550px) {
+
+    [data-show="show-for-small"],
+    .show-for-small {
+        display: none !important;
+    }
+}
+
+.shop_table .quantity {
+    margin: 0;
+}
+
+.text-center .quantity,
+.quantity {
+    opacity: 1;
+    display: inline-flex;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.form-minimal.quantity .qty {
+    max-width: 2em;
+    border-left: 0;
+    border-right: 0;
+}
+
+.quantity input[type="number"] {
+    width: 2.5em;
+    text-align: center;
+    border-radius: 0 !important;
+    appearance: textfield;
+    font-size: 1em;
+}
+
+.form-minimal input:not([type="submit"]),
+.form-minimal textarea,
+.form-minimal select {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.quantity .minus,
+.quantity .plus {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.quantity input {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.quantity .button.minus {
+    border-right: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.button.is-form:hover {
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+.dark .button.is-form:hover,
+.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    outline: none;
+    opacity: 1;
+}
+
+.quantity .button.plus {
+    border-left: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.is-form,
+button.is-form,
+input[type="submit"].is-form,
+input[type="reset"].is-form,
+input[type="button"].is-form {
+    overflow: hidden;
+    position: relative;
+    text-shadow: 1px 1px 1px #fff;
+    color: #666;
+    border: 1px solid #ddd;
+
+    text-transform: none;
+    font-weight: normal;
+}
+
+.shop_table .actions {
+    border: 0;
+    padding: 15px 0 10px;
+}
+
+.nav-vertical.nav-tabs>li.active>a,
+.scroll-to-bullets a.active,
+.nav-pagination>li>.current,
+.nav-pagination>li>span:hover,
+.nav-pagination>li>a:hover,
+.has-hover:hover .badge-outline .badge-inner,
+.accordion-title.active,
+.featured-table,
+.is-outline:hover,
+.tagcloud a:hover,
+blockquote,
+.has-border,
+.cart-icon strong::after,
+.cart-icon strong,
+.blockUI::before,
+.processing::before,
+.loading-spin,
+.slider-nav-circle .flickity-prev-next-button:hover svg,
+.slider-nav-circle .flickity-prev-next-button:hover .arrow,
+.primary.is-outline:hover {
+    border-color: #c29832;
+}
+
+.accordion-title.active,
+.has-icon-bg .icon .icon-inner,
+.logo a,
+.primary.is-underline,
+.primary.is-link,
+.badge-outline .badge-inner,
+.nav-outline>li.active>a,
+.nav-outline>li.active>a,
+.cart-icon strong,
+[data-color="primary"],
+.is-outline.primary {
+    color: #c29832;
+}
+
+.is-outline:hover,
+.primary.is-outline:hover {
+    color: #fff;
+}
+
+.is-outline:hover {
+    box-shadow: none !important;
+}
+
+@media screen and (min-width: 850px) {
+    .large-7 {
+        max-width: 58.33333%;
+        -ms-flex-preferred-size: 58.33333%;
+        flex-basis: 58.33333%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .large-5 {
+        max-width: 41.66667%;
+
+        flex-basis: 41.66667%;
+    }
+}
+
+.is-sticky-column {
+    will-change: min-height;
+}
+
+.is-sticky-column__inner {
+    will-change: position, transform;
+}

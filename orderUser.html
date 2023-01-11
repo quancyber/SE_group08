@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi" class="bg-fill" style="scroll-behavior:auto;">
+
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HITA - Đơn hàng</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Cormorant%20Upright%3Aregular%2Cregular%7COpen%20Sans%3Aregular%2Cregular%2Cregular%7COpen%20Sans%20Condensed%3Aregular%2C300italic%7CLora&#038;display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Cormorant%20Upright%3Aregular%2Cregular%7COpen%20Sans%3Aregular%2Cregular%2Cregular%7COpen%20Sans%20Condensed%3Aregular%2C300italic%7CLora&#038;display=swap"
+        media="print" onload="this.media='all'" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://store.hitasanti.com/wp-content/themes/flatsome/assets/css/ie-fallback.css">
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="orderUser.css">
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="wrapper">
+        <header id="header" class="header has-sticky sticky-jump">
+            <div class="header-wrapper">
+                <div id="top-bar" class="header-top nav-dark hide-for-medium">
+                    <div class="flex-row container">
+                        <div class="flex-col hide-for-medium flex-left">
+                            <ul class="nav nav-left medium-nav-center nav-small nav-divided">
+                                <li class="html custom html_topbar_left"></li>
+                            </ul>
+                        </div>
+
+                        <div class="flex-col hide-for-medium flex-center">
+                            <ul class="nav nav-center nav-small  nav-divided">
+                            </ul>
+                        </div>
+
+                        <div class="flex-col hide-for-medium flex-right">
+                            <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
+                                <li class="cart-item has-icon has-dropdown">
+
+                                    <a href="cart.html" title="Giỏ hàng" class="header-cart-link is-small">
+                                        <span class="cart-icon image-icon">
+                                            <strong>0</strong>
+                                        </span>
+                                    </a>
+
+                                </li>
+                                <li class="account-item has-icon">
+                                    <a href="/login.html"
+                                        class="nav-top-link nav-top-not-logged-in is-small current-lightbox-clicked">
+                                        <span>
+                                            Đăng nhập / Đăng ký </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="masthead" class="header-main nav-dark">
+                    <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+                        <!-- Logo -->
+                        <div id="logo" class="flex-col logo">
+                            <!-- Header logo -->
+                            <a href="home.html" title="HITA Coffee - HITA lợi ích cho người" rel="home">
+                                <img width="200" height="73" class="header_logo header-logo" alt="HITA Store">
+
+                                <img width="200" height="73"
+                                    src="https://hitasanti.com/wp-content/uploads/2019/09/hita-vegan-logo.png"
+                                    class="header-logo-dark" alt="HITA Store">
+
+                            </a>
+                        </div>
+
+
+                        <!-- Left Elements -->
+                        <div class="flex-col hide-for-medium flex-left flex-grow">
+                            <ul class="header-nav header-nav-main nav nav-left  nav-line-bottom nav-spacing-small">
+                                <li>
+                                    <a href="home.html" class="nav-top-link">
+                                        Trang chủ</a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="nav-top-link">Sản phẩm</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="about.html" class="nav-top-link">Về chúng tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Right Elements -->
+                        <div class="flex-col hide-for-medium flex-right">
+                            <ul class="header-nav header-nav-main nav nav-right  nav-line-bottom nav-spacing-small">
+                                <li class="header-search has-icon">
+                                    <div class="header-button"> <a class="icon button circle is-outline is-small">
+                                            <i class="fa-solid fa-magnifying-glass" style="font-size: 16px;"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Right Elements -->
+                    <div class="flex-col show-for-medium flex-right">
+                        <ul class="mobile-nav nav nav-right ">
+                            <li class="cart-item has-icon">
+
+                                <a href="cart.html" class=" nav-top-link is-small" title="Giỏ hàng">
+
+                                    <span class="cart-icon image-icon">
+                                        <strong>0</strong>
+                                    </span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="top-divider full-width"></div>
+                </div>
+            </div>
+            <div class="header-bg-container fill">
+                <div class="header-bg-image fill"></div>
+                <div class="header-bg-color fill"></div>
+            </div>
+        </header>
+    </div>
+
+    <main id="main" class="">
+        <div id="content" class="content-area page-wrapper" role="main">
+            <div class="row row-main">
+                <div class="large-12 col">
+                    <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents"
+                        cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Đơn hàng</th>
+                                <th>Sản phẩm</th>
+                                <th>Người mua</th>
+                                <th>Địa chỉ</th>
+                                <th>Ghi chú</th>
+                                <th>Tổng thanh toán</th>
+                            </tr>
+                        </thead>
+                        <tbody id="all-order-user">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- FOOTER  -->
+    <footer id="footer" class="footer-wrapper">
+
+        <div class="footer-widgets footer footer-2 dark">
+            <div class="row dark large-columns-1 mb-0">
+
+                <div id="block_widget-6" class="col pb-0 widget block_widget">
+
+                    <div class="row footer-new" id="row-1652326020">
+
+                        <div id="col-484553449" class="col medium-4 small-12 large-4">
+                            <div class="col-inner">
+                                <div class="row" id="row-1126033569">
+
+                                    <div id="col-496395474" class="col small-12 large-12">
+                                        <div class="col-inner text-left">
+
+                                            <h4><span style="font-size: 100%;">SHOWROOM VÀ VĂN PHÒNG</span></h4>
+                                            <p>C5-C6 khu nhà ở thương mại, 319 Lý Thường Kiệt, P.15, Q.11, Tp. Hồ Chí
+                                                Minh <a rel="noopener noreferrer nofollow"
+                                                    href="https://g.page/hitasanticom?share" target="_blank"> <span
+                                                        style="color: #aaaaaa;">(Xem bản đồ)</span></a><br>
+                                                Email: <a style="color: #f1f1f1;"
+                                                    href="mailto:sanphamsach@hitasanti.com?Subject=Xin Chào Cty HITA"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"><strong>sanphamsach@hitasanti.com</strong></a><br>
+                                                Hotline: <a href="tel:08.66.484.666"><span
+                                                        style="font-weight: bold;">08.66.484.666</span></a></p>
+                                            <div class="row" id="row-1882829843">
+
+                                                <div id="col-1321676209" class="col small-12 large-12">
+                                                    <div class="col-inner">
+
+                                                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                                        <div class="social-icons follow-icons"><a
+                                                                href="https://www.facebook.com/hitasanticom/"
+                                                                target="_blank" data-label="Facebook"
+                                                                rel="noopener noreferrer nofollow"
+                                                                class="icon primary button circle facebook tooltip tooltipstered"><i
+                                                                    class="icon-facebook"></i></a><a
+                                                                href="https://www.instagram.com/hitasanticom/"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="Instagram"
+                                                                class="icon primary button circle instagram tooltip tooltipstered"><i
+                                                                    class="icon-instagram"></i></a><a
+                                                                href="https://twitter.com/hitasantiCom" target="_blank"
+                                                                data-label="Twitter" rel="noopener noreferrer nofollow"
+                                                                class="icon primary button circle twitter tooltip tooltipstered"><i
+                                                                    class="icon-twitter"></i></a><a
+                                                                href="mailto:sanphamsach@hitasanti.com"
+                                                                data-label="E-mail" rel="nofollow"
+                                                                class="icon primary button circle email tooltip tooltipstered"><i
+                                                                    class="icon-envelop"></i></a><a
+                                                                href="tel:0866484666" target="_blank" data-label="Phone"
+                                                                rel="noopener noreferrer nofollow"
+                                                                class="icon primary button circle phone tooltip tooltipstered"><i
+                                                                    class="icon-phone"></i></a><a
+                                                                href="https://www.pinterest.com/hitasanticom/"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="Pinterest"
+                                                                class="icon primary button circle pinterest tooltip tooltipstered"><i
+                                                                    class="icon-pinterest"></i></a><a
+                                                                href="https://www.linkedin.com/company/hitasanticom"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="LinkedIn"
+                                                                class="icon primary button circle linkedin tooltip tooltipstered"><i
+                                                                    class="icon-linkedin"></i></a><a
+                                                                href="https://www.youtube.com/channel/UC_pMSjhNoxJ3hJvAp84NEqg"
+                                                                target="_blank" rel="noopener noreferrer nofollow"
+                                                                data-label="YouTube"
+                                                                class="icon primary button circle youtube tooltip tooltipstered"><i
+                                                                    class="icon-youtube"></i></a></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <style>
+                                #col-484553449>.col-inner {
+                                    margin: 0 0px 0px 0px;
+                                }
+                            </style>
+                        </div>
+
+                        <div id="col-470406109" class="col medium-8 small-12 large-8">
+                            <div class="col-inner">
+
+                                <div class="row" id="row-1394230124">
+
+                                    <div id="col-1008618337" class="col medium-6 small-6 large-6">
+                                        <div class="col-inner">
+
+                                            <h4>VỀ HITA</h4>
+                                            <ul class="notStyle ">
+                                                <li><a href="https://hitasanti.com/gioi-thieu-hita/" target="_blank"
+                                                        rel="noopener sponsored">Giới thiệu</a></li>
+                                                <li><a href="https://hitasanti.com/lien-he/" target="_blank"
+                                                        rel="noopener sponsored">Liên hệ</a></li>
+                                                <li><a href="https://hitasanti.com/he-thong-hita-brands/"
+                                                        target="_blank" rel="noopener sponsored">Hệ thống nhãn hiệu</a>
+                                                </li>
+                                                <li><a href="https://store.hitasanti.com/chinh-sach-bao-mat-thong-tin">Qui
+                                                        định bảo mật</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="col-1994350822" class="col medium-6 small-12 large-6">
+                                        <div class="col-inner text-left">
+                                            <h4>THÔNG TIN</h4>
+                                            <ul class="notStyle ">
+                                                <li><a href="https://hitasanti.com/c/thong-tin-tuyen-dung/"
+                                                        target="_blank" rel="noopener sponsored">Thông tin tuyển
+                                                        dụng</a></li>
+                                                <li><a href="https://hitasanti.com/danh-sach-video/" target="_blank"
+                                                        rel="noopener">Video</a></li>
+                                                <li><a href="http://www.hitasanti.com/hoi-dap">Hỏi đáp</a></li>
+                                                <li><a href="http://www.hitasanti.com/hop-tac-kinh-doanh">Hợp tác kinh
+                                                        doanh</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="col-580334198" class="col small-12 large-12">
+                                        <div class="col-inner">
+
+                                            <div class="container section-title-container" style="margin-bottom:0px;">
+                                                <h4 class="section-title section-title-normal"><b></b><span
+                                                        class="section-title-main">ĐỂ LẠI MAIL NHẬN NHIỀU ƯU ĐÃI
+                                                        HƠN</span><b></b></h4>
+                                            </div>
+
+                                            <div role="form" class="wpcf7" id="wpcf7-f10-o1" lang="en-US" dir="ltr">
+                                                <div class="screen-reader-response">
+                                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                    <ul></ul>
+                                                </div>
+                                                <form action="/#wpcf7-f10-o1" method="post" class="wpcf7-form init"
+                                                    novalidate="novalidate" data-status="init">
+                                                    <div style="display: none;">
+                                                        <input type="hidden" name="_wpcf7" value="10">
+                                                        <input type="hidden" name="_wpcf7_version" value="5.4.2">
+                                                        <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                                        <input type="hidden" name="_wpcf7_unit_tag"
+                                                            value="wpcf7-f10-o1">
+                                                        <input type="hidden" name="_wpcf7_container_post" value="0">
+                                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                                                    </div>
+                                                    <div class="flex-row form-flat medium-flex-wrap ftNewsletter">
+                                                        <div class="flex-col flex-grow">
+                                                            <span class="wpcf7-form-control-wrap your-email"><input
+                                                                    type="email" name="your-email" value="" size="40"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                                    aria-required="true" aria-invalid="false"
+                                                                    placeholder="Đăng ký email"></span>
+                                                        </div>
+                                                        <div class="flex-col ml-half">
+                                                            <input type="submit" value="Đăng ký"
+                                                                class="wpcf7-form-control wpcf7-submit button"><span
+                                                                class="ajax-loader"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                </form>
+                                            </div>
+
+                                            <p><i><span style="font-size: 85%;">* Hãy để lại email để nhận được những
+                                                        khuyến mãi mới nhất</span> </i></p>
+
+                                        </div>
+
+                                        <style>
+                                            #col-580334198>.col-inner {
+                                                margin: 13px 0px 0px 0px;
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#top"
+            class="back-to-top bodhi-tree icon invert plain fixed bottom z-1 is-outline circle __mPS2id active"
+            id="top-link"><i class="icon-angle-up"></i></a>
+
+        <div class="absolute-footer dark medium-text-center small-text-center">
+            <div class="container clearfix">
+
+                <div class="footer-primary pull-left">
+                    <div class="copyright-footer">
+                        <div class="mainBottomFooter">
+                            <div class="bot-ft clearfix insScroll">
+
+                                <div class="logo-ft-1 pull-left">
+                                    <a rel="noopener noreferrer nofollow"
+                                        href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=45785"><img
+                                            class="insImageload" " alt=" HITA"
+                                            src="//theme.hstatic.net/1000290372/1000458418/14/dtb.png?v=1066"
+                                            width="200"></a>
+                                </div>
+
+                                <div class="copy pull-left">
+                                    <p style="color:#000; margin-bottom:0;">
+                                        <span style="font-weight: bold; ">Công ty TNHH Thương Mại &amp; Dịch Vụ
+                                            HITA</span> <br>
+                                        Chịu trách nhiệm quản lý nội dung: Phòng Thương Mại Điện Tử Công ty TNHH Thương
+                                        Mại &amp; Dịch Vụ HITA
+                                        <br>
+                                        Mã số thuế: 0315026989 do Sở Kế hoạch đầu tư TP HCM cấp ngày 07/05/2018
+                                        <br>
+                                        Copyrights ©2020 www.hitasanti.com. All Rights Reserved
+
+                                    </p>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="headerCart.js"></script>
+    <script src="orderUser.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 30px;
+}
+
+.banner-bg {
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: -1px;
+    right: -1px;
+    background-color: rgba(0, 0, 0, .15);
+    transition: transform .3s, opacity .6s, -webkit-transform .3s;
+    pointer-events: none;
+}
+
+.banner-layers {
+    max-height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-layers>* {
+    position: absolute !important;
+}
+
+@media screen and (min-width: 850px) {
+    .res-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .lg-y0 {
+        top: 0%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .lg-x5 {
+        left: 5%;
+    }
+}
+
+.text-box {
+    max-height: 100%;
+}
+
+.text-box .text-box-content {
+    position: relative;
+    z-index: 10;
+    backface-visibility: hidden;
+}
+
+.banner h2,
+.banner h3,
+.banner h1 {
+    padding: 0;
+    font-weight: 400;
+    margin-top: .2em;
+    margin-bottom: .2em;
+    line-height: 1;
+}
+
+.banner h1 {
+    font-size: 3.5em;
+}
+
+h1 span,
+h2 span {
+    font-family: 'Lora';
+}
+
+.banner h6,
+.banner h5,
+.banner p {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+[data-text-color="primary"] {
+    color: #c29832 !important;
+}
+
+.sidebar_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar_menu ul li {
+    padding: 8px 30px;
+}
+
+.sidebar_menu ul li a.ps2id.active {
+    color: #4e2d15;
+}
+
+.had_line {
+    border-left: 2px solid #c29832;
+}
+
+.row .row-small:not(.row-collapse),
+.container .row-small:not(.row-collapse) {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 850px) {
+
+    .gallery-columns-3 .gallery-item,
+    .large-columns-3>.col,
+    .large-columns-3 .flickity-slider>.col {
+        max-width: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.align-equal>.col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.box-image>a,
+.box-image>div>a {
+    display: block;
+}
+
+has-format,
+.video-fit,
+.image-cover {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+[data-line-height="xs"] {
+    line-height: 0.85 !important;
+}
+
+.wpcf7 p {
+    padding: 0;
+    margin: 0;
+}
+
+.wpcf7 .ajax-loader {
+    position: absolute;
+    right: 0;
+    background-color: #FFF;
+    border-radius: 99px;
+}
+
+.wpcf7 .ajax-loader {
+    display: none !important;
+}
+
+.wpcf7 .ajax-loader {
+    visibility: hidden;
+    opacity: .75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    padding: 0;
+    margin: 0 24px;
+}
+
+.wpcf7 form.init .wpcf7-response-output,
+.wpcf7 form.resetting .wpcf7-response-output,
+.wpcf7 form.submitting .wpcf7-response-output {
+    display: none;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em .5em 1em;
+    padding: .2em 1em;
+    border: 2px solid #00a0d2;
+}
+
+.wpcf7 .wpcf7-response-output {
+    border-radius: 10px;
+}
+
+.h2,
+h2 {
+    font-size: 1.6em;
+    line-height: 1.3;
+}
+
+.video-fit video,
+.video-fit iframe,
+img.back-image,
+.image-cover img,
+.has-format img,
+.has-equal-box-heights .box-image img {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-position: 50% 50%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+.post-item .post-title {
+    font-size: 20px;
+}
+
+.post-item .post-title,
+.post-item .from_the_blog_excerpt {
+    padding: 0px 30px 10px 30px;
+}
+
+.op-8 {
+    opacity: .8;
+}
+
+.post-item .is-divider {
+    border-bottom: 0 !important;
+}
+
+.box-blog-post .is-divider {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    height: 2px;
+}
+
+.text-left .is-divider,
+.text-left .star-rating,
+.text-left .is-star-rating {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+
+
+@media screen and (min-width: 850px) {
+    .col+.col .col-inner {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+.box {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 850px) {
+
+    .gallery-columns-3 .gallery-item,
+    .large-columns-3>.col,
+    .large-columns-3 .flickity-slider>.col {
+        max-width: 33.33333%;
+        flex-basis: 33.33333%;
+    }
+}
